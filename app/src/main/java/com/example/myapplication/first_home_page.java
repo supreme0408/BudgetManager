@@ -62,7 +62,7 @@ public class first_home_page extends AppCompatActivity implements NavigationView
         toolbar.setTitle("Spendee");
         toolbar.setTitleTextColor(Color.BLACK);
 
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
         bottomNavigationView=findViewById(R.id.bottomNavigationbar);
         frameLayout=findViewById(R.id.main_frame);

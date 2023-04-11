@@ -39,7 +39,6 @@
                     android:id="@+id/email_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/cousine"
                     android:hint="User Email"
                     android:maxLines="1"
                     android:ellipsize="end"

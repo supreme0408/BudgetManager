@@ -18,7 +18,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/sarina"
             android:gravity="center"
             android:text="Spendee"
             android:textAppearance="?android:textAppearanceLarge"
