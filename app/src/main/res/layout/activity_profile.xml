@@ -25,12 +25,12 @@
                 android:layout_width="552dp"
                 android:layout_height="287dp"
                 android:layout_marginTop="-10dp"
-                android:src="@drawable/yellowdesign"/>
+                android:src="@drawable/blue_design"/>
 
             <ImageView
                 android:layout_width="225dp"
                 android:layout_height="219dp"
-                android:layout_marginTop="-110dp"
+                android:layout_marginTop="-220dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:src="@drawable/register_user" />
@@ -42,7 +42,7 @@
                     android:hint="User Email"
                     android:maxLines="1"
                     android:ellipsize="end"
-                    android:layout_marginTop="-20dp"
+                    android:layout_marginTop="-30dp"
                     android:layout_marginBottom="20dp"
                     android:gravity="center"
                     android:textSize="20dp"
@@ -54,29 +54,27 @@
                 android:id="@+id/btn_changepass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@color/yellow"
+                android:layout_margin="20dp"
+                android:background="#03A9F4"
                 android:text="Change Password"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                app:backgroundTint="@color/yellow"/>
+                app:backgroundTint="#03A9F4"/>
 
             <Button
                 android:id="@+id/btn_deleteaccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@color/yellow"
+                android:layout_margin="20dp"
+                android:background="#03A9F4"
                 android:text="Delete Account Permanently"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                app:backgroundTint="@color/yellow" />
-
+                app:backgroundTint="#03A9F4" />
 
         </LinearLayout>
     </ScrollView>
-
 
 </LinearLayout>

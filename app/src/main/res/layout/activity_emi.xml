@@ -77,7 +77,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:background="@color/yellow"
+                android:background="#03A9F4"
                 android:text="Calculate"
                 android:textColor="@color/black"
                 tools:ignore="HardcodedText" />

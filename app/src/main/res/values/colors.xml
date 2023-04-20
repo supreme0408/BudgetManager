@@ -12,9 +12,9 @@
     <color name="red">#FFF41504</color>
     <color name="date_color"/>
     <color name="expense_amount" />
-    <color name="dashboard_color">#FFFFC107</color>
-    <color name="income_color">#FFFFC107</color>
-    <color name="expense_color">#FFFFC107</color>
+    <color name="dashboard_color">#03A9F4</color>
+    <color name="income_color">#03A9F4</color>
+    <color name="expense_color">#03A9F4</color>
     <color name="green">#A5D6A7</color>
     <color name="golden">#FFD700</color>
     <color name="gray">#737373</color>

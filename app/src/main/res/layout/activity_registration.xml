@@ -19,11 +19,17 @@
             android:orientation="vertical">
 
             <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="287dp"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/blue_design"/>
+
+            <ImageView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="318dp"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="-30dp"
+                android:layout_marginTop="-300dp"
                 android:layout_marginRight="40dp"
                 android:src="@drawable/register_user" />
 
@@ -35,7 +41,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="-45dp"
+                android:layout_marginTop="-40dp"
                 >
 
             <EditText
@@ -84,7 +90,7 @@
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                app:backgroundTint="@color/yellow" />
+                app:backgroundTint="#03A9F4" />
 
             <TextView
                 android:id="@+id/signin_here"

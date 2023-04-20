@@ -15,14 +15,15 @@
         android:layout_width="wrap_content"
         android:layout_height="180dp"
         android:layout_marginTop="75dp"
-        android:src="@drawable/spendeelogo" />
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_logoimg" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:text="Spendee"
+        android:text="Expense Tracker"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="35sp" />
@@ -55,8 +56,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:gravity="center_horizontal"
-        android:text="Harshil Rana"
+        android:text="Sohum Hedaoo"
         android:textAlignment="center"
+        android:textColor="@color/gray"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -65,9 +67,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
-        android:text="Jainil Rana,Manan Shah,"
+        android:text="Prajwal Patil"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
         android:textStyle="bold"
         android:textSize="18sp" />
 
@@ -76,9 +79,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
-        android:text="PriyanshShah"
+        android:text="Ramanuj Darvekar"
         android:layout_marginTop="10dp"
         android:textAlignment="center"
+        android:textColor="@color/gray"
         android:textStyle="bold"
         android:textSize="18sp" />
 

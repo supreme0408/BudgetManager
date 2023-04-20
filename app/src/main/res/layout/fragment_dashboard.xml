@@ -11,7 +11,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        app:cardElevation="5dp"
+        app:cardElevation="2dp"
         android:elevation="10dp"
         android:layout_height="wrap_content">
 
@@ -29,7 +29,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:background="@color/green">
+                    android:background="#5EB4BF">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:background="@color/green">
+                    android:background="#5EB4BF">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textColor="@color/black"
+                        android:textColor="#46AF4A"
                         android:gravity="center"
                         android:text="Income">
 
@@ -96,7 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textColor="@color/red"
+                        android:textColor="#DC4135"
                         android:gravity="center"
                         android:text="Expense">
 
@@ -118,7 +118,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textColor="@color/black"
+                        android:textColor="#46AF4A"
                         android:gravity="center"
                         android:id="@+id/income_set_result"
                         android:text="000.00"
@@ -138,7 +138,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textColor="@color/red"
+                        android:textColor="#DC4135"
                         android:id="@+id/expense_set_result"
                         android:text="000.00"
                         android:maxLines="1"
@@ -177,14 +177,16 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:id="@+id/recycler_income"></androidx.recyclerview.widget.RecyclerView>
+                    android:id="@+id/recycler_income">
+
+                </androidx.recyclerview.widget.RecyclerView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Expense History"
                     android:textAppearance="?android:textAppearanceLarge"
-                    android:padding="10dp"></TextView>
+                    android:padding="10dp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
@@ -198,7 +200,7 @@
                     android:layout_height="wrap_content"
                     android:text="Expense Statistics"
                     android:textAppearance="?android:textAppearanceLarge"
-                    android:padding="10dp"></TextView>
+                    android:padding="10dp"/>
 
                 <com.github.mikephil.charting.charts.BarChart
                     android:id="@+id/bar_chart"
@@ -211,12 +213,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/holtwood_one_sc"
                     android:padding="10dp"
                     android:textColor="@color/gray"
                     android:textStyle="italic"
                     android:text="SAVE MONEY"
-                    android:textAppearance="?android:textAppearanceLarge"></TextView>
+                    android:textAppearance="?android:textAppearanceLarge"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -225,12 +226,10 @@
                     android:layout_marginTop="-30dp"
                     android:layout_marginBottom="30dp"
                     android:textStyle="italic"
-                    android:fontFamily="@font/holtwood_one_sc"
                     android:textColor="@color/gray"
                     android:text="LIVE BETTER"
                     android:textAppearance="?android:textAppearanceLarge"
-                    android:padding="10dp"></TextView>
-
+                    android:padding="10dp"/>
             </LinearLayout>
         </ScrollView>
 
@@ -247,7 +246,7 @@
                 android:id="@+id/expense_ft_text"
                 android:padding="5dp"
                 android:textColor="@color/black"
-                android:background="#FFEAA00C"
+                android:background="#45AAB6"
                 android:layout_gravity="center"
                 android:layout_marginRight="5dp"
                 android:visibility="invisible"
@@ -259,7 +258,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/expense_ft_btn"
                 android:layout_gravity="bottom"
-                android:backgroundTint="@color/yellow"
+                android:backgroundTint="#00BCD4"
                 android:elevation="6dp"
                 app:fabSize="mini"
                 android:visibility="invisible"
@@ -283,12 +282,11 @@
                 android:id="@+id/income_ft_text"
                 android:textColor="@color/black"
                 android:padding="5dp"
-                android:background="#FFEAA00C"
+                android:background="#45AAB6"
                 android:layout_gravity="center"
                 android:layout_marginRight="5dp"
                 android:visibility="invisible"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small">
-
             </TextView>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -296,7 +294,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/income_ft_btn"
                 android:layout_gravity="bottom|end"
-                android:backgroundTint="@color/yellow"
+                android:backgroundTint="#00BCD4"
                 android:elevation="6dp"
                 app:fabSize="mini"
                 app:pressedTranslationZ="12dp"
@@ -311,9 +309,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
+            android:contentDescription="fb_main_lus_btn"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/yellow"
+            android:backgroundTint="#00BCD4"
             android:src="@drawable/ic_income"
             app:fabSize="normal">
 

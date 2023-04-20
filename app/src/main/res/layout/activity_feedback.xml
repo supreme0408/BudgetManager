@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:numStars="5"
-        android:progressTint="@color/golden"
+        android:progressTint="#2DBDCF"
         android:padding="10dp"
         android:stepSize="0.5"
         android:layout_marginTop="15dp"/>
@@ -38,7 +38,7 @@
         android:text="Submit"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:background="@color/yellow"
+        android:background="#03A9F4"
         android:layout_marginTop="15dp"/>
 
 </LinearLayout>

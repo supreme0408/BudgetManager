@@ -247,7 +247,6 @@ public class DashboardFragment extends Fragment {
                     String stResult=String.valueOf(totalsumincome);
 
                     totalIncomeResult.setText(stResult+".00");
-
                 }
                 balance=totalsumincome-totalsumexpense;
                 if(balance>0.05*totalsumincome && balance<=0.1*totalsumincome){

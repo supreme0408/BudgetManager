@@ -21,6 +21,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,7 +36,8 @@ public class home_screen extends AppCompatActivity {
     private EditText mPass;
     private CheckBox remember;
 
-private ProgressDialog mDialog;
+//private ProgressDialog mDialog;
+private ProgressBar progressbar;
 
 private FirebaseAuth mAuth;
     @Override
@@ -44,8 +46,8 @@ private FirebaseAuth mAuth;
         setContentView(R.layout.activity_home_screen);
 
         mAuth=FirebaseAuth.getInstance();
-        mDialog=new ProgressDialog(this);
-
+//        mDialog=new ProgressDialog(this);
+        progressbar= findViewById(R.id.simpleProgressBar);
         loginDetails();
     }
 
@@ -63,10 +65,6 @@ private FirebaseAuth mAuth;
         {
             Intent intent=new Intent(home_screen.this,first_home_page.class);
             startActivity(intent);
-        }
-        else if(!checkbox.equals("false"))
-        {
-
         }
 
         remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -120,21 +118,23 @@ private FirebaseAuth mAuth;
                     mPass.setError("Password Required..",null);
                     return;
                 }
-                mDialog.setMessage("Logging in..");
-                mDialog.show();
+//                mDialog.setMessage("Logging in..");
+//                mDialog.show();
+                progressbar.setVisibility(View.VISIBLE);
 
                 mAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            mDialog.dismiss();
+//                            mDialog.dismiss();
                             checkEmailVerification();
                         }
                         else
                         {
-                            mDialog.dismiss();
+//                            mDialog.dismiss();
                             Toast.makeText(getApplicationContext(),"Login Failed..",Toast.LENGTH_SHORT).show();
                         }
+                        progressbar.setVisibility(View.INVISIBLE);
                     }
                 });
             }
@@ -143,8 +143,9 @@ private FirebaseAuth mAuth;
     }
     private void checkEmailVerification()
     {
-        FirebaseUser firebaseUser=mAuth.getInstance().getCurrentUser();
-        Boolean emailflag=firebaseUser.isEmailVerified();
+        FirebaseUser firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
+        assert firebaseUser != null;
+        boolean emailflag=firebaseUser.isEmailVerified();
         if(emailflag)
         {
             finish();

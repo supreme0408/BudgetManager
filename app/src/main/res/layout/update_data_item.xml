@@ -144,7 +144,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/yellow"
-                        android:backgroundTint="@color/yellow"
+                        android:backgroundTint="#03A9F4"
                         android:text="Delete"
                         android:textAppearance="?android:textAppearanceMedium"
                         android:textColor="@color/black" />
@@ -164,7 +164,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/yellow"
-                        android:backgroundTint="@color/yellow"
+                        android:backgroundTint="#03A9F4"
                         android:text="Update"
                         android:textAppearance="?android:textAppearanceMedium"
                         android:textColor="@color/black" />

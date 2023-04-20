@@ -29,7 +29,7 @@
         android:layout_marginStart="105dp"
         android:layout_marginLeft="105dp"
         android:layout_marginTop="492dp"
-        android:background="@color/yellow"
+        android:background="#03A9F4"
         android:text="Calculate"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"

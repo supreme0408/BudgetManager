@@ -59,7 +59,7 @@ public class first_home_page extends AppCompatActivity implements NavigationView
         setContentView(R.layout.activity_first_home_page);
 
         Toolbar toolbar=findViewById(R.id.my_toolbar);
-        toolbar.setTitle("Spendee");
+        toolbar.setTitle("Expense Tracker");
         toolbar.setTitleTextColor(Color.BLACK);
 
         //setSupportActionBar(toolbar);
